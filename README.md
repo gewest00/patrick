@@ -6,11 +6,11 @@ Microscopy output organisation tool
 
 
 ## SYNOPSIS
-    patrick [-h] [-c COLUMN] input [input ...] [-r]
+    patrick [-h] [-c COLUMN/s] input [input ...] [-r]
 
 
 ## DESCRIPTION
-    Take Guava files and reformat for easier use.
+    Take output from microscopy and categorise/summarise for further analysis.
 
     -h
         display help information and exit
@@ -39,6 +39,9 @@ Microscopy output organisation tool
 ## NOTES
     Output is written to a .csv file named output_[input].xlsx
     Data from all the input files will be reformatted into corresponding output file.
+
+    Repeating the command will not overwirte previous outputs, instead a new output is 
+    created with a copy number.
 
     Data is presented as four sheets containing data according to infection and nucleation
     status, plus summary sheets at the end based on specified categories.
